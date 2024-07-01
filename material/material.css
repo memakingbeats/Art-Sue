@@ -1,0 +1,134 @@
+/* Personalização adicional do CSS pode ser adicionada aqui */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(244, 238, 227);
+}
+
+.no-padding-margin {
+    padding: 0 !important;
+}
+.logo a img {
+    width: 300px;
+    height: auto;
+}
+.custom-toggler {
+    background-color: #8e7758; /* Cor de fundo personalizada */
+    border-color: #8e7758; /* Cor da borda personalizada */
+}
+
+.custom-toggler:hover {
+    background-color: #7a674d; /* Cor de fundo personalizada quando hover */
+    border-color: #7a674d; /* Cor da borda personalizada quando hover */
+}
+
+/* Estilo para as setas (arrows) do carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* Defina a cor desejada para as setas */
+}
+
+.fixed-top {
+    background-color: rgba(31, 21, 1, 0.929);
+}
+
+.navbar-brand img {
+    width: 8rem;
+}
+.navbar-collapse {
+    margin-left: 0rem;
+}
+
+.navbar-collapse .nav-item {
+    margin-left: 1rem;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* Para tornar as letras maiúsculas */
+    transition: transform 0.3s ease; /* Adiciona transição suave ao crescimento */
+}
+
+.navbar-collapse .nav-item:hover {
+    transform: scale(1.2); /* Cresce 20% ao passar o mouse */
+}
+
+.foot {
+    margin-bottom: 3rem;
+
+    margin-bottom: 3rem;
+}
+
+.foot .btn-primary {
+    margin-bottom: 2rem;
+}
+
+.foot .social {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.sessao {
+    margin-top: 20rem;
+    background-color: rgb(244, 238, 227);
+}
+
+.sessao h2 {
+    margin-bottom: 5rem;
+}
+
+.sessao p {
+    margin-bottom: 5rem;
+}
+
+@media (max-width: 767px) {
+    .logo a img {
+        width: 100px;
+        height: auto;
+    }
+
+    .sessao {
+        margin-top: 10rem;
+        background-color: rgb(244, 238, 227);
+    }
+
+    .copy {
+        font-size: 10px;
+    }
+
+    footer {
+        text-align: center;
+    }
+    .foot {
+        padding: 40px; /* Adapte conforme necessário */
+    }
+
+    .formular {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 300px; /* Ajuste conforme necessário */
+    }
+    .formular h4 {
+        font-size: 20px;
+    }
+
+    .map-iframe {
+        width: 100%; /* Largura total para dispositivos móveis */
+        height: 300px; /* Altura ajustada para dispositivos móveis */
+    }
+}
+
+/* Adicione estas regras dentro da sua media query existente */
+@media (min-width: 768px) and (max-width: 1000px) {
+    .formular {
+        margin-right: auto; /* Centralize o formulário na largura disponível */
+        max-width: 200px; /* Ajuste a largura máxima do formulário conforme necessário */
+        margin-top: 20px; /* Aproxime o formulário do restante do conteúdo */
+    }
+
+    .formular h4 {
+        font-size: 20px;
+    }
+}
